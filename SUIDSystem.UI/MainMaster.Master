@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="SUIDSystem.UI.MainMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Student Unique Identification System</title>
+    <link href="MainImages/favicon.png" rel="icon" type="image/x-icon" />
+    <script src="Scripts/jquery-2.1.0.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <style>
+
+
+        .auto-style1
+        {
+            width: 587px;
+        }
+        .auto-style2
+        {
+            width: 612px
+            }
+        </style>
+    </asp:ContentPlaceHolder>
+</head>
+<body oncontextmenu="return false" style="margin-left:80px;margin-right:80px;">
+    <form id="form1" runat="server">
+
+        <!--Header-->
+        <div>
+            <asp:Image ID="Image1" ImageUrl="~/MainImages/baner.jpg" runat="server"  Width="100%" Height="147px" /></div>
+         <div>
+        <!--Header-->
+
+        <!--Navibar-->
+             <div class="navbar navbar-inverse" role="navigation">
+         <ul class="nav navbar-nav">
+             <li><a class="navbar-header" href="../CommonFolder/Home.aspx">Home</a></li>
+             <li><a class="navbar-header" href="../Admin/Admin.aspx">Admin</a></li>
+             <li><a class="navbar-header" href="../SUIDStaff/SUIDStaff.aspx">Staff </a></li>
+             <li><a class="navbar-header" href="../ExamController/ExamController.aspx">Exam Controller</a></li>
+             <li><a class="navbar-header" href="../CompanyPersons/Company.aspx">Company's</a></li>
+             <li><a class="navbar-header" href="../EducationDepartment/EducationDepartment.aspx">Education Department</a></li>
+             <li><a class="navbar-header" href="../Student/Student.aspx">Student's</a></li>
+             <li><a class="navbar-header" href="../CommonFolder/LatestNews.aspx">Latest News</a></li>
+             <li><a class="navbar-header" href="../CommonFolder/DownLoad.aspx">Downloads</a></li>
+             <li><a class="navbar-header" href="../CommonFolder/AboutSUID.aspx">About SUID</a></li>
+             <li><a class="navbar-header" href="../CommonFolder/ContactUS.aspx">Contact US</a></li>         
+         </ul>
+        </div>
+        <!--Navibar-->
+        <!--contentholders-->
+             <div style="width:100%">
+                 <div style="float:right;width:80%">
+        <asp:ContentPlaceHolder ID="MainPlaceHolder" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                     </div>
+                 <div style="float:right;width:20%">
+        <asp:ContentPlaceHolder ID="NavigationPlaceHolder" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                     </div>
+                 </div>
+        <!--contentholders-->
+          <div class="modal-footer">
+            
+            <asp:Image ID="Image2" ImageUrl="~/MainImages/footer.png" runat="server" Width="99%" BorderStyle="Groove" />
+        </div>
+    </div>
+    </form>
+</body>
+</html>

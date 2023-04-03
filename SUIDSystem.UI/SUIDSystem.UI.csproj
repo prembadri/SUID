@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{17D64E9E-DDBF-4A0B-9623-AE6EEA154E41}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SUIDSystem.UI</RootNamespace>
+    <AssemblyName>SUIDSystem.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Admin.aspx" />
+    <Content Include="Admin\AdminRegisteration.aspx" />
+    <Content Include="Admin\CompanyRegisteration.aspx" />
+    <Content Include="Admin\Department.aspx" />
+    <Content Include="Admin\ExamControlerRegisteration.aspx" />
+    <Content Include="Admin\MemerSearch.aspx" />
+    <Content Include="Admin\SUIDStaffRegisteration.aspx" />
+    <Content Include="Admin\UpdateDeleteAdmin.aspx" />
+    <Content Include="Admin\UpdateDeleteCompanyPerson.aspx" />
+    <Content Include="Admin\UpdateDeleteExamController.aspx" />
+    <Content Include="Admin\UpdateDeleteSUIDStaff.aspx" />
+    <Content Include="CommonFolder\AboutSUID.aspx" />
+    <Content Include="CommonFolder\ContactUS.aspx" />
+    <Content Include="CommonFolder\DownLoad.aspx" />
+    <Content Include="CommonFolder\Home.aspx" />
+    <Content Include="CommonFolder\LatestNews.aspx" />
+    <Content Include="CompanyPersons\Company.aspx" />
+    <Content Include="CompanyPersons\SearchStatus.aspx" />
+    <Content Include="CompanyPersons\VerificationPage.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Dounloadings\National Anthem %28Full Orchestral Ver. - Instrumental%29-%28MyMp3Singer.com%29.mp3" />
+    <Content Include="EducationDepartment\EducationDepartment.aspx" />
+    <Content Include="EducationDepartment\Qulification.aspx" />
+    <Content Include="EducationDepartment\UpdateCertificates.aspx" />
+    <Content Include="EducationDepartment\UploadCertificates.aspx" />
+    <Content Include="ExamController\ExamController.aspx" />
+    <Content Include="ExamController\InsertSuid.aspx" />
+    <Content Include="ExamController\SearchStatus.aspx" />
+    <Content Include="ExamController\viewProfile.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Global.asax" />
+    <Content Include="Index.aspx" />
+    <Content Include="MainImages\1.JPG" />
+    <Content Include="MainImages\1382916_217114025131665_1842403753_n.jpg" />
+    <Content Include="MainImages\2.JPG" />
+    <Content Include="MainImages\250px-Emblem_of_India_svg.png" />
+    <Content Include="MainImages\2563.JPG" />
+    <Content Include="MainImages\3.JPG" />
+    <Content Include="MainImages\4.JPG" />
+    <Content Include="MainImages\baner.jpg" />
+    <Content Include="MainImages\banner_admin.png" />
+    <Content Include="MainImages\Enter_Button_Green_by_yiangos.gif" />
+    <Content Include="MainImages\favicon.png" />
+    <Content Include="MainImages\footer.png" />
+    <Content Include="MainImages\goverment-scholarship-minority-student-india.jpg" />
+    <Content Include="MainImages\Images\1.jpg" />
+    <Content Include="MainImages\Images\2563.JPG" />
+    <Content Include="MainImages\Images\about-hed.png" />
+    <Content Include="MainImages\Images\banner_contactus.jpg" />
+    <Content Include="MainImages\Images\download-banner.jpg" />
+    <Content Include="MainImages\Images\education-banner.jpg" />
+    <Content Include="MainImages\Images\FOTO _ 27 %28 2 Copies %29 - Copy.jpg" />
+    <Content Include="MainImages\Images\ICM_Student_group.jpg" />
+    <Content Include="MainImages\Images\Presentation1.jpg" />
+    <Content Include="MainImages\Images\rti-logo.gif" />
+    <Content Include="MainImages\Images\runyan_walking_0_Banner.jpg" />
+    <Content Include="MainImages\Images\student-loans-ts-1360x860.jpg" />
+    <Content Include="MainImages\Images\Student-on-Computer_Section Banners.jpg" />
+    <Content Include="MainImages\Images\Students_Main_Photo.jpg" />
+    <Content Include="MainImages\indian_tri_colors_by_viratvito003-d46lqsm.jpg" />
+    <Content Include="MainImages\jobs-banner1.jpg" />
+    <Content Include="MainImages\Pravinkumar Dabade.jpg" />
+    <Content Include="MainImages\Slide1.JPG" />
+    <Content Include="MainImages\Slide2.JPG" />
+    <Content Include="MainImages\SUIDlogo.JPG" />
+    <Content Include="MainMaster.Master" />
+    <Content Include="Dounloadings\Student Identity System.docx" />
+    <Content Include="Dounloadings\Student registerationForm.docx" />
+    <None Include="Scripts\jquery-2.1.0.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-2.1.0.js" />
+    <Content Include="Scripts\jquery-2.1.0.min.js" />
+    <Content Include="Student\DownloadAknoodgement.aspx" />
+    <Content Include="Student\DownLoadSUIDCard.aspx" />
+    <Content Include="Student\InterCertificates.aspx" />
+    <Content Include="Student\OtherCertificates.aspx" />
+    <Content Include="Student\PgCertificates.aspx" />
+    <Content Include="Student\Student.aspx" />
+    <Content Include="Student\StudentRegisteration.aspx" />
+    <Content Include="Student\TenCertficates.aspx" />
+    <Content Include="Student\UgCertifcates.aspx" />
+    <Content Include="Student\UpdatePGCertficates.aspx" />
+    <Content Include="Student\updateUGCertificates.aspx" />
+    <Content Include="Student\UpdateInterCertificates.aspx" />
+    <Content Include="Student\UpdateStudent.aspx" />
+    <Content Include="Student\UpdateTenCertificates.aspx" />
+    <Content Include="SUIDStaff\NumberandEmail.aspx" />
+    <Content Include="SUIDStaff\SearchStatus.aspx" />
+    <Content Include="SUIDStaff\StatusGeneration.aspx" />
+    <Content Include="SUIDStaff\SUIDStaff.aspx" />
+    <Content Include="SUIDStaff\UpdateStatusReport.aspx" />
+    <Content Include="SUIDStaff\Verification.aspx" />
+    <Content Include="SUIDStaff\VerificationPage.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\jquery-2.1.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminRegisteration.aspx.cs">
+      <DependentUpon>AdminRegisteration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminRegisteration.aspx.designer.cs">
+      <DependentUpon>AdminRegisteration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CompanyRegisteration.aspx.cs">
+      <DependentUpon>CompanyRegisteration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CompanyRegisteration.aspx.designer.cs">
+      <DependentUpon>CompanyRegisteration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Department.aspx.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Department.aspx.designer.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ExamControlerRegisteration.aspx.cs">
+      <DependentUpon>ExamControlerRegisteration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ExamControlerRegisteration.aspx.designer.cs">
+      <DependentUpon>ExamControlerRegisteration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MemerSearch.aspx.cs">
+      <DependentUpon>MemerSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MemerSearch.aspx.designer.cs">
+      <DependentUpon>MemerSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SUIDStaffRegisteration.aspx.cs">
+      <DependentUpon>SUIDStaffRegisteration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SUIDStaffRegisteration.aspx.designer.cs">
+      <DependentUpon>SUIDStaffRegisteration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UpdateDeleteAdmin.aspx.cs">
+      <DependentUpon>UpdateDeleteAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdateDeleteAdmin.aspx.designer.cs">
+      <DependentUpon>UpdateDeleteAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UpdateDeleteCompanyPerson.aspx.cs">
+      <DependentUpon>UpdateDeleteCompanyPerson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdateDeleteCompanyPerson.aspx.designer.cs">
+      <DependentUpon>UpdateDeleteCompanyPerson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UpdateDeleteExamController.aspx.cs">
+      <DependentUpon>UpdateDeleteExamController.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdateDeleteExamController.aspx.designer.cs">
+      <DependentUpon>UpdateDeleteExamController.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UpdateDeleteSUIDStaff.aspx.cs">
+      <DependentUpon>UpdateDeleteSUIDStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdateDeleteSUIDStaff.aspx.designer.cs">
+      <DependentUpon>UpdateDeleteSUIDStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonFolder\AboutSUID.aspx.cs">
+      <DependentUpon>AboutSUID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonFolder\AboutSUID.aspx.designer.cs">
+      <DependentUpon>AboutSUID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonFolder\ContactUS.aspx.cs">
+      <DependentUpon>ContactUS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonFolder\ContactUS.aspx.designer.cs">
+      <DependentUpon>ContactUS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonFolder\DownLoad.aspx.cs">
+      <DependentUpon>DownLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonFolder\DownLoad.aspx.designer.cs">
+      <DependentUpon>DownLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonFolder\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonFolder\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonFolder\LatestNews.aspx.cs">
+      <DependentUpon>LatestNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonFolder\LatestNews.aspx.designer.cs">
+      <DependentUpon>LatestNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyPersons\Company.aspx.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyPersons\Company.aspx.designer.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyPersons\SearchStatus.aspx.cs">
+      <DependentUpon>SearchStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyPersons\SearchStatus.aspx.designer.cs">
+      <DependentUpon>SearchStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyPersons\VerificationPage.aspx.cs">
+      <DependentUpon>VerificationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyPersons\VerificationPage.aspx.designer.cs">
+      <DependentUpon>VerificationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EducationDepartment\EducationDepartment.aspx.cs">
+      <DependentUpon>EducationDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EducationDepartment\EducationDepartment.aspx.designer.cs">
+      <DependentUpon>EducationDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EducationDepartment\Qulification.aspx.cs">
+      <DependentUpon>Qulification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EducationDepartment\Qulification.aspx.designer.cs">
+      <DependentUpon>Qulification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EducationDepartment\UpdateCertificates.aspx.cs">
+      <DependentUpon>UpdateCertificates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EducationDepartment\UpdateCertificates.aspx.designer.cs">
+      <DependentUpon>UpdateCertificates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EducationDepartment\UploadCertificates.aspx.cs">
+      <DependentUpon>UploadCertificates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EducationDepartment\UploadCertificates.aspx.designer.cs">
+      <DependentUpon>UploadCertificates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamController\ExamController.aspx.cs">
+      <DependentUpon>ExamController.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamController\ExamController.aspx.designer.cs">
+      <DependentUpon>ExamController.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamController\InsertSuid.aspx.cs">
+      <DependentUpon>InsertSuid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamController\InsertSuid.aspx.designer.cs">
+      <DependentUpon>InsertSuid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamController\SearchStatus.aspx.cs">
+      <DependentUpon>SearchStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamController\SearchStatus.aspx.designer.cs">
+      <DependentUpon>SearchStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamController\viewProfile.aspx.cs">
+      <DependentUpon>viewProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamController\viewProfile.aspx.designer.cs">
+      <DependentUpon>viewProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainMaster.Master.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMaster.Master.designer.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student\DownloadAknoodgement.aspx.cs">
+      <DependentUpon>DownloadAknoodgement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\DownloadAknoodgement.aspx.designer.cs">
+      <DependentUpon>DownloadAknoodgement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\DownLoadSUIDCard.aspx.cs">
+      <DependentUpon>DownLoadSUIDCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\DownLoadSUIDCard.aspx.designer.cs">
+      <DependentUpon>DownLoadSUIDCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\InterCertificates.aspx.cs">
+      <DependentUpon>InterCertificates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\InterCertificates.aspx.designer.cs">
+      <DependentUpon>InterCertificates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\OtherCertificates.aspx.cs">
+      <DependentUpon>OtherCertificates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\OtherCertificates.aspx.designer.cs">
+      <DependentUpon>OtherCertificates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\PgCertificates.aspx.cs">
+      <DependentUpon>PgCertificates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\PgCertificates.aspx.designer.cs">
+      <DependentUpon>PgCertificates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Student.aspx.cs">
+      <DependentUpon>Student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Student.aspx.designer.cs">
+      <DependentUpon>Student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentRegisteration.aspx.cs">
+      <DependentUpon>StudentRegisteration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\StudentRegisteration.aspx.designer.cs">
+      <DependentUpon>StudentRegisteration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\TenCertficates.aspx.cs">
+      <DependentUpon>TenCertficates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\TenCertficates.aspx.designer.cs">
+      <DependentUpon>TenCertficates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\UgCertifcates.aspx.cs">
+      <DependentUpon>UgCertifcates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\UgCertifcates.aspx.designer.cs">
+      <DependentUpon>UgCertifcates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\UpdatePGCertficates.aspx.cs">
+      <DependentUpon>UpdatePGCertficates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\UpdatePGCertficates.aspx.designer.cs">
+      <DependentUpon>UpdatePGCertficates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\updateUGCertificates.aspx.cs">
+      <DependentUpon>updateUGCertificates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\updateUGCertificates.aspx.designer.cs">
+      <DependentUpon>updateUGCertificates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\UpdateInterCertificates.aspx.cs">
+      <DependentUpon>UpdateInterCertificates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\UpdateInterCertificates.aspx.designer.cs">
+      <DependentUpon>UpdateInterCertificates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\UpdateStudent.aspx.cs">
+      <DependentUpon>UpdateStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\UpdateStudent.aspx.designer.cs">
+      <DependentUpon>UpdateStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\UpdateTenCertificates.aspx.cs">
+      <DependentUpon>UpdateTenCertificates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\UpdateTenCertificates.aspx.designer.cs">
+      <DependentUpon>UpdateTenCertificates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SUIDStaff\NumberandEmail.aspx.cs">
+      <DependentUpon>NumberandEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SUIDStaff\NumberandEmail.aspx.designer.cs">
+      <DependentUpon>NumberandEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SUIDStaff\SearchStatus.aspx.cs">
+      <DependentUpon>SearchStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SUIDStaff\SearchStatus.aspx.designer.cs">
+      <DependentUpon>SearchStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SUIDStaff\StatusGeneration.aspx.cs">
+      <DependentUpon>StatusGeneration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SUIDStaff\StatusGeneration.aspx.designer.cs">
+      <DependentUpon>StatusGeneration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SUIDStaff\SUIDStaff.aspx.cs">
+      <DependentUpon>SUIDStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SUIDStaff\SUIDStaff.aspx.designer.cs">
+      <DependentUpon>SUIDStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SUIDStaff\UpdateStatusReport.aspx.cs">
+      <DependentUpon>UpdateStatusReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SUIDStaff\UpdateStatusReport.aspx.designer.cs">
+      <DependentUpon>UpdateStatusReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SUIDStaff\Verification.aspx.cs">
+      <DependentUpon>Verification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SUIDStaff\Verification.aspx.designer.cs">
+      <DependentUpon>Verification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SUIDStaff\VerificationPage.aspx.cs">
+      <DependentUpon>VerificationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SUIDStaff\VerificationPage.aspx.designer.cs">
+      <DependentUpon>VerificationPage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SUIDSystem.DAL\SUIDSystem.DAL.csproj">
+      <Project>{ec0ad9d9-3e52-4094-9423-4a52bcc3d192}</Project>
+      <Name>SUIDSystem.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SUIDSystem.Model\SUIDSystem.Model.csproj">
+      <Project>{c03e4cae-392b-442b-9a51-c141eed0c546}</Project>
+      <Name>SUIDSystem.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ECertificates\" />
+    <Folder Include="StudentCertificates\" />
+    <Folder Include="StudentPhotos\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51736/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
